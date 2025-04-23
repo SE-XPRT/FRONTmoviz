@@ -90,9 +90,9 @@ function Home() {
   }, []);
   const movies = moviesTMDB.map((data, i) => {
     const isLiked = likedMovies.some((movie) => movie === data.title);
-    const desc = data.overview;
-    if (desc.length > 250) {
-      desc = desc.substring(0, 250) + `...`;
+    const description = data.overview;
+    if (description.length > 250) {
+      description = description.substring(0, 250) + `...`;
     }
     return (
       <Movie
