@@ -100,7 +100,7 @@ function Home() {
         updateLikedMovies={updateLikedMovies}
         isLiked={isLiked}
         title={data.title}
-        overview={desc}
+        overview={description}
         poster={`https://image.tmdb.org/t/p/w500` + data.poster_path}
         voteAverage={data.vote_average}
         voteCount={data.vote_count}
